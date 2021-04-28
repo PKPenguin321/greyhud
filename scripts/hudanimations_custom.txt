@@ -45,7 +45,7 @@ event HudHealthDyingPulseStop
 	StopEvent HudHealthDyingPulse 0.0
 	StopEvent HudHealthDyingPulseLoop 0.0
 	
-	Animate PlayerStatusHealthValueSpectator		fgcolor		"255 75 75 255"		Accel 0.0 0.0
+	Animate PlayerStatusHealthValueSpectator		fgcolor		"TanLight"		Accel 0.0 0.0
 }
 
 // Low Ammo Pulse
