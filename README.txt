@@ -1,6 +1,6 @@
 If you just want to use the HUD and play immediately:
 
-1. Extract the "greyhud" folder located inside the "-master" ZIP folder.
+1. Extract the "greyhud-master" folder located inside the "greyhud-master" ZIP folder.
 
 2. Drag and drop that file to your custom folder located at "Program Files or Program Files (x86)/Steam/steamapps/common/Team Fortress 2/tf/custom" if you're on Windows.
 
