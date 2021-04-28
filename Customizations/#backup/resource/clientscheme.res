@@ -1990,6 +1990,17 @@ Scheme
 				"outline"	"1"
 			}
 		}
+		"HudFontSmallish"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"16"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		"HudFontSmallishBold"
 		{
 			"1"
@@ -2579,6 +2590,17 @@ Scheme
 				"name"		"TF2 Secondary"
 				"tall"		"10"
 				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"ScoreboardSmallSecondary"
+		{
+			"1"
+			{
+				"name"		"TF2 Secondary"
+				"tall"		"10"
+				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -3388,6 +3410,7 @@ Scheme
 		{
 			"1"
 			{
+				"name"		"OCR A Extended"
 				"name"		"ocra"
 				"tall"		"10"
 				"weight"	"400"
@@ -3397,7 +3420,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"400"
 				"additive"	"0"
@@ -3406,7 +3429,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"18"
 				"weight"	"400"
 				"additive"	"0"
@@ -3419,7 +3442,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"10"
 				"weight"	"800"
 				"yres"		"480 599"
@@ -3428,7 +3451,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"800"
 				"additive"	"0"
@@ -3437,7 +3460,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"18"
 				"weight"	"800"
 				"additive"	"0"
@@ -3450,7 +3473,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"16"
 				"weight"	"400"
 				"additive"	"0"
@@ -3909,7 +3932,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"7"
 				"weight"	"0"
 				"blur"		"3"
@@ -3922,7 +3945,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"7"
 				"weight"	"400"
 				"additive"	"0"
@@ -3934,7 +3957,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"10"
 				"weight"	"400"
 				"additive"	"0"
@@ -3946,7 +3969,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"400"
 				"additive"	"0"
@@ -3958,7 +3981,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"30"
 				"weight"	"400"
 				"additive"	"0"
@@ -6718,17 +6741,17 @@ Scheme
 		"7" "resource/ocra.ttf"
 		"8"
 		{
-			"font"	"resource/font/crosshairs.ttf
+			"font"	"resource/font/crosshairs.ttf"
 			"name"	"broeselhudCrosshairs"
 		}
 		"9"
 		{
-			"font"	"resource/font/tf2cross.ttf
+			"font"	"resource/font/tf2cross.ttf"
 			"name"	"tf2crossRegular"
 		}
 		"10"
 		{
-			"font"	"resource/font/Garm3nFont.ttf
+			"font"	"resource/font/Garm3nFont.ttf"
 			"name"	"Garm3nFont"
 		}
 	}

@@ -1844,7 +1844,6 @@ Scheme
 				"dropshadow"	"1"
 			}
 		}
-
 		"HudFontBig"
 		{
 			"1"
@@ -1978,7 +1977,7 @@ Scheme
 				"additive"	"0"
 				"antialias" 	"1"
 			}
-		}	
+		}
 		"HudFontSmallOutline"
 		{
 			"1"
@@ -1987,8 +1986,19 @@ Scheme
 				"tall"		"14"
 				"weight"	"500"
 				"additive"	"0"
-				"antialias" 	"1"
+				"antialias" "1"
 				"outline"	"1"
+			}
+		}
+		"HudFontSmallish"
+		{
+			"1"
+			{
+				"name"		"Bebas Neue Regular"
+				"tall"		"16"
+				"weight"	"500"
+				"additive"	"0"
+				"antialias" "1"
 			}
 		}
 		"HudFontSmallishBold"
@@ -2315,6 +2325,7 @@ Scheme
 				"outline"	"1"
 				"range"		"0x0000 0x017F" // Basic Latin, Latin-1 Supplement, Latin Extended-A
 			}
+			
 		}		
 		TFTypeDeath
 		{
@@ -2491,7 +2502,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"Bebas Neue Regular"
+				"name"		"Arial Black"
 				"tall"		"12"
 				"antialias" "1"
 				"weight"	"500"
@@ -2579,6 +2590,17 @@ Scheme
 				"name"		"Bebas Neue Regular"
 				"tall"		"10"
 				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
+		"ScoreboardSmallSecondary"
+		{
+			"1"
+			{
+				"name"		"Bebas Neue Regular"
+				"tall"		"10"
+				"weight"	"500"
 				"additive"	"0"
 				"antialias" "1"
 			}
@@ -3388,6 +3410,7 @@ Scheme
 		{
 			"1"
 			{
+				"name"		"OCR A Extended"
 				"name"		"ocra"
 				"tall"		"10"
 				"weight"	"400"
@@ -3397,7 +3420,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"400"
 				"additive"	"0"
@@ -3406,7 +3429,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"18"
 				"weight"	"400"
 				"additive"	"0"
@@ -3419,7 +3442,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"10"
 				"weight"	"800"
 				"yres"		"480 599"
@@ -3428,7 +3451,7 @@ Scheme
 			}
 			"2"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"800"
 				"additive"	"0"
@@ -3437,7 +3460,7 @@ Scheme
 			}
 			"3"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"18"
 				"weight"	"800"
 				"additive"	"0"
@@ -3450,7 +3473,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"16"
 				"weight"	"400"
 				"additive"	"0"
@@ -3896,7 +3919,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"TF2 Build"
+				"name"		"Bebas Neue Regular"
 				"tall"		"12"
 				"weight"	"500"
 				"additive"	"0"
@@ -3909,7 +3932,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"7"
 				"weight"	"0"
 				"blur"		"3"
@@ -3922,7 +3945,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"7"
 				"weight"	"400"
 				"additive"	"0"
@@ -3934,7 +3957,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"10"
 				"weight"	"400"
 				"additive"	"0"
@@ -3946,7 +3969,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"14"
 				"weight"	"400"
 				"additive"	"0"
@@ -3958,7 +3981,7 @@ Scheme
 		{
 			"1"
 			{
-				"name"		"ocra"
+				"name"		"OCR A Extended"
 				"tall"		"30"
 				"weight"	"400"
 				"additive"	"0"
@@ -6661,8 +6684,8 @@ Scheme
 		"2" "resource/tfd.ttf"
 		"3"
 		{
-			"font" "resource/TF2.ttf"
-			"name" "TF2"
+			"font" "resource/font/bebasneue-regular.ttf"
+			"name" "Bebas Neue Regular"
 			"russian"
 			{
 				"range" "0x0000 0xFFFF"
@@ -6674,8 +6697,8 @@ Scheme
 		}
 		"4" 
 		{
-			"font" "resource/TF2Secondary.ttf"
-			"name" "TF2 Secondary"
+			"font" "resource/font/bebasneue-regular.ttf"
+			"name" "Bebas Neue Regular"
 			"russian"
 			{
 				"range" "0x0000 0xFFFF"
@@ -6687,8 +6710,8 @@ Scheme
 		}
 		"5" 
 		{
-			"font" "resource/TF2Professor.ttf"
-			"name" "TF2 Professor"
+			"font" "resource/font/bebasneue-regular.ttf"
+			"name" "Bebas Neue Regular"
 			"russian"
 			{
 				"range" "0x0000 0x00FF"
@@ -6700,8 +6723,8 @@ Scheme
 		}	
 		"6" 
 		{
-			"font" "resource/TF2Build.ttf"
-			"name" "TF2 Build"
+			"font" "resource/font/bebasneue-regular.ttf"
+			"name" "Bebas Neue Regular"
 			"russian"
 			{
 				"range" "0x0000 0xFFFF"
@@ -6718,22 +6741,17 @@ Scheme
 		"7" "resource/ocra.ttf"
 		"8"
 		{
-			"font" "resource/font/BebasNeue-Regular.ttf"
-			"name" "Bebas Neue Regular"
+			"font"	"resource/font/crosshairs.ttf"
+			"name"	"broeselhudCrosshairs"
 		}
 		"9"
 		{
-			"font"	"resource/font/crosshairs.ttf
-			"name"	"broeselhudCrosshairs"
+			"font"	"resource/font/tf2cross.ttf"
+			"name"	"tf2crossRegular"
 		}
 		"10"
 		{
-			"font"	"resource/font/tf2cross.ttf
-			"name"	"tf2crossRegular"
-		}
-		"11"
-		{
-			"font"	"resource/font/Garm3nFont.ttf
+			"font"	"resource/font/Garm3nFont.ttf"
 			"name"	"Garm3nFont"
 		}
 	}
