@@ -1,0 +1,187 @@
+// Health Bonus Pulse
+event HudHealthBonusPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.2
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.2 0.4
+	
+	Animate PlayerStatusHealthValue		fgcolor		"0 191 255 255"		Linear 0.0 0.0
+
+	RunEvent HudHealthBonusPulseLoop	0.4
+}
+
+// call to loop HudHealthBonusPulse
+event HudHealthBonusPulseLoop
+{
+	RunEvent HudHealthBonusPulse 0.0
+}
+
+event HudHealthBonusPulseStop
+{
+	StopEvent HudHealthBonusPulse 0.0
+	StopEvent HudHealthBonusPulseLoop 0.0
+	
+	Animate PlayerStatusHealthValue		fgcolor		"TanLight"		Accel 0.0 0.0
+}
+
+// Health Dying Pulse
+event HudHealthDyingPulse
+{
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"255"		Linear 0.0 0.075
+	Animate	PlayerStatusHealthBonusImage 	Alpha		"0"			Linear 0.125 0.075
+	
+	RunEvent HudHealthDyingPulseLoop	0.25
+}
+
+// call to loop HudHealthDyingPulse
+event HudHealthDyingPulseLoop
+{
+	RunEvent HudHealthDyingPulse 0.0
+}
+
+event HudHealthDyingPulseStop
+{
+	StopEvent HudHealthDyingPulse 0.0
+	StopEvent HudHealthDyingPulseLoop 0.0
+}
+
+// Low Ammo Pulse
+event HudLowAmmoPulse
+{
+	Animate AmmoInClip					fgcolor		"255 75 75 255" Linear 0.0 0.5
+	Animate AmmoInClip					fgcolor		"TanLight" Linear 0.5 0.5
+
+	Animate AmmoInReserve				fgcolor		"255 75 75 255" Linear 0.0 0.5
+	Animate AmmoInReserve				fgcolor		"0 191 255 255" Linear 0.5 0.5
+
+	Animate AmmoNoClip					fgcolor		"255 75 75 255" Linear 0.0 0.5
+	Animate AmmoNoClip					fgcolor		"TanLight" Linear 0.5 0.5
+
+	RunEvent HudLowAmmoPulseLoop	1.0
+}
+
+// call to loop HudLowAmmoPulse
+event HudLowAmmoPulseLoop
+{
+	RunEvent HudLowAmmoPulse 0.0
+}
+
+event HudLowAmmoPulseStop
+{
+	StopEvent HudLowAmmoPulse 0.0
+	StopEvent HudLowAmmoPulseLoop 0.0
+
+	Animate AmmoInClip					fgcolor		"TanLight" Accel 0.0 0.0
+	Animate AmmoInReserve				fgcolor		"0 191 255 255" Accel 0.0 0.0
+	Animate AmmoNoClip					fgcolor		"TanLight" Accel 0.0 0.0
+	
+	
+}
+
+// CTF Flag Outline
+event FlagOutlineHide
+{
+}
+
+event FlagOutline
+{
+}
+
+// Spy Disguise
+event HudSpyDisguiseChanged
+{
+	Animate PlayerStatusSpyOutlineImage		Alpha		"255"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Position	"0 300"	Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"150 150"		Linear 0.0 0.2
+
+	RunEvent HudSpyDisguiseHide	0.7
+}
+
+event HudSpyDisguiseHide
+{
+	Animate PlayerStatusSpyOutlineImage		Position	"3 413"			Linear 0.0 0.2
+	Animate PlayerStatusSpyOutlineImage		Size		"55 55"			Linear 0.0 0.2
+	
+	Animate PlayerStatusSpyOutlineImage		Alpha		"0"				Linear 0.2 0.1
+}
+
+event HudSpyDisguiseFadeIn
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"			Linear 0.9 0.1	
+}
+
+event HudSpyDisguiseFadeOut
+{
+	RunEvent HudSpyDisguiseChanged	0
+	Animate PlayerStatusSpyImage			Alpha		"0"				Linear 0.9 0.1	
+}
+
+// Medic Charge
+event HudMedicCharged
+{
+	Animate		ChargeLabel 			FgColor		"0 191 255 255"		Linear 0.0 0.5
+	Animate		ChargeLabel				FgColor		"TanLight"			Linear 0.5 0.5
+
+	Animate		ChargeMeter 			FgColor		"0 191 255 255"		Linear 0.0 0.5
+	Animate		ChargeMeter				FgColor		"TanLight"			Linear 0.5 0.5
+
+	Animate		ChargeLabelSmall		FgColor		"0 191 255 255"		Linear 0.0 0.5
+	Animate		ChargeLabelSmall		FgColor		"TanLight"			Linear 0.5 0.5
+
+	Animate		IndividualChargesLabel	FgColor		"0 191 255 255"		Linear 0.0 0.5
+	Animate		IndividualChargesLabel	FgColor		"TanLight"			Linear 0.5 0.5
+
+	RunEvent 	HudMedicChargedLoop		1.0
+}
+
+event HudMedicChargedLoop
+{
+	RunEvent 	HudMedicCharged 		0.0
+}
+
+event HudMedicChargedStop
+{
+	StopEvent 	HudMedicCharged 		0.0
+	StopEvent 	HudMedicChargedLoop 	0.0
+	
+	Animate		ChargeLabel 			FgColor		"TanLight"	Accel 0.0 0.0
+	Animate		ChargeMeter 			FgColor		"TanLight"	Accel 0.0 0.0
+	Animate		ChargeLabelSmall 		FgColor		"TanLight"	Accel 0.0 0.0
+	Animate		IndividualChargesLabel	FgColor		"TanLight"	Accel 0.0 0.0
+}
+
+// Chat Window Position
+event CompetitiveGame_LowerChatWindow
+{
+}
+
+event CompetitiveGame_RestoreChatWindow
+{
+}
+
+event HudTournament_MoveChatWindow
+{
+}
+
+// Match HUD Statuses
+event TeamStatus_PlayerDead
+{
+	SetVisible respawntime  1 0
+	SetVisible respawntimeshadow 1 0
+}
+
+event TeamStatus_PlayerAlive
+{
+	SetVisible respawntime 0 0.2
+	SetVisible respawntimeshadow 0 0.2
+}
+
+// Disable XP Notification
+event XPSourceShow_Positive
+{
+}
+
+event XPSourceShow_Negative
+{
+}
