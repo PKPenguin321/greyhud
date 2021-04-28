@@ -55,10 +55,10 @@
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
 	}
-	"PlayerStatusHealthValue"
+	"PlayerStatusHealthValueSpectator"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValue"
+		"fieldName"		"PlayerStatusHealthValueSpectator"
 		"xpos"			"-2"
 		"ypos"			"-6"
 		"zpos"			"5"
@@ -71,10 +71,10 @@
 		"font"			"HudFontMediumSmallBold"
 		"fgcolor"		"TanLight"
 	}
-	"PlayerStatusHealthValueShadow"
+	"PlayerStatusHealthValueSpectatorShadow"
 	{
 		"ControlName"	"CExLabel"
-		"fieldName"		"PlayerStatusHealthValueBG"
+		"fieldName"		"PlayerStatusHealthValueSpectatorShadow"
 		"xpos"			"-1"
 		"ypos"			"-5"
 		"zpos"			"5"
