@@ -1,3 +1,5 @@
+Fork of greyhud that incorporates votehud_custom_font for better bot kicking: https://github.com/andy013/votehud_custom_font
+
 If you just want to use the HUD and play immediately:
 
 1. Extract the "greyhud-master" folder located inside the "greyhud-master" ZIP folder.
