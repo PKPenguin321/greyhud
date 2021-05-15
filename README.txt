@@ -1,5 +1,3 @@
-Fork of greyhud that incorporates votehud_custom_font for better bot kicking: https://github.com/andy013/votehud_custom_font
-
 If you just want to use the HUD and play immediately:
 
 1. Extract the "greyhud-master" folder located inside the "greyhud-master" ZIP folder.
@@ -28,6 +26,6 @@ All custom crosshairs can be found at "greyhud/scripts/hudlayout.res" at the top
 
 4. To edit the color, change the "fgcolor" to the RGBA color code that you want. The first number is the intensity of Red, the second is Green, the third is Blue, and the fourth is the alpha (how intense it is overall). All these numbers range from 0 to 255, 0 being the darkest, and 255 being the brightest. Common RGBA color codes can be found on many websites if you need further assistance.
 	
-Credit goes to broeselhud_blue for the crosshair font files and code.
+Credit goes to broeselhud_blue for the crosshair font files and code. This project also utilizes votehud_custom_font by andy013: https://github.com/andy013/votehud_custom_font
 
 Feel free to message me on Steam @ https://steamcommunity.com/id/sAvenisgrey.
